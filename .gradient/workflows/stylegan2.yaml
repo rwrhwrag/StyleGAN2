@@ -34,12 +34,7 @@ jobs:
         pip install requests==2.22.0
         pip install Pillow==6.2.1
         pip3 install linus-colab-ssh
-        apt-get install sudo -y
         
-        sudo apt-get install wget
-        from colab_ssh import setup_ssh, loop_forever
-        loop_forever()
-
         cd /inputs/stylegan2
         python run_generator.py generate-images \
           --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
