@@ -33,11 +33,12 @@ jobs:
         pip install scipy==1.3.3
         pip install requests==2.22.0
         pip install Pillow==6.2.1
+        import os
         apt-get install sudo -y
         sudo apt-get update
         sudo apt install git -y
         pip install git+https://github.com/demotomohiro/remocolab.git
-        import remocolab
+        os.system("import remocolab")
         remocolab.setupSSHD()
 
         cd /inputs/stylegan2
