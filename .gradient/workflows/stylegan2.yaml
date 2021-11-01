@@ -40,7 +40,6 @@ jobs:
         from colab_ssh import setup_ssh, loop_forever
         loop_forever()
 
-        lscpu
         cd /inputs/stylegan2
         python run_generator.py generate-images \
           --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
