@@ -33,6 +33,8 @@ jobs:
         pip install scipy==1.3.3
         pip install requests==2.22.0
         pip install Pillow==6.2.1
+        apt-get install sudo -y
+        sudo apt install git
         pip install git+https://github.com/demotomohiro/remocolab.git
         import remocolab
         remocolab.setupSSHD()
