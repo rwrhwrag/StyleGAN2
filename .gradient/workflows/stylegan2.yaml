@@ -34,7 +34,7 @@ jobs:
         pip install requests==2.22.0
         pip install Pillow==6.2.1
         apt-get install sudo -y
-        sudo apt install git
+        sudo apt install git -y
         pip install git+https://github.com/demotomohiro/remocolab.git
         import remocolab
         remocolab.setupSSHD()
